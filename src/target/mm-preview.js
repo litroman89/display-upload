@@ -60,10 +60,10 @@ const preview = {
 
     validateActionInput(data, this.questions);
 
-    // folder name with newly builded banners
+    // folder name with newly built banners
     const currentBuildDir = data.inputDir; // build folder
 
-    // folder with previously builded banners
+    // folder with previously built banners
     const prevBuildStorageDir = path.join(process.cwd(), '.prev-build-snapshot');
 
     // checking if previous version exists
