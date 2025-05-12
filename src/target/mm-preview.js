@@ -100,7 +100,8 @@ const preview = {
     // Identify the modified files by comparing with the previous build
     let changedFiles = [];
 
-    if (hasPrevBuild) {
+    //checking if previous build exists and if outputDir is the same
+    if (hasPrevBuild && data.outputDir === data.previousOutputDir) {
       console.log('Previous build found. Define modified files...');
 
       changedFiles = await Promise.all(
